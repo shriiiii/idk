@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> PETSHOP</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="navbar.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<script>
+    var open = document.getElementById('hamburger');
+var changeIcon = true;
+
+open.addEventListener("click", function(){
+
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+    }
+});
+</script>
+<body>
+    <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="#">PET<span>S</span>HOP</a></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Meet">Meet Our Team</a></li>
+                    <li><a href="#Trusted">Trusted By</a></li>
+                    <li><a href="#Location">Location </a></li>
+                    <li><a href="#Contact">Contact </a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="content">
+        <center>
+            <h2>About Us</h2>
+        </center>
+        <p>Pets HQ was founded in 2005 by the Parker family. 
+        We are a shelter in the heart of New York City with a belief that no pet should be left behind. 
+        We love all our animals and hope that there is a family for each and every one of them. </p>
+    </section>
+
+    <section id="Pricing" class="content">
+        <center>
+            <h2>Pricing</h2>
+        </center>
+        <p>What we give to our customers</p>
+        <div class="row">
+            <div class="col-md-6">
+              <center><img src="./animal.jpeg"></img></center>  
+                <p>Initial costs per animal is 15$.</p>
+            </div>
+            <div class="col-md-6">
+               <center> <img src="./animalfood.jpeg"></img></center>
+                <p>Initial costs per animal food product is 4$</p>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <center><img src="./animalaccessories.jpeg"></img></center>
+                    <p>Inintial costs per animal accessory is 8$</p>
+                </div>
+                <div class="col-md-6">
+                    <center><img src="./animalmedications.jpeg"></img></center>
+                    <p>Initial costs per medication is 3$</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="Services" class="content">
+        <center>
+            <h2>Services</h2>
+        </center>
+        <p>What we serve to our customers</p>
+        <div class="row">
+            <div class="col-md-6">
+             <center><img src="./animalgrooming.jpeg"></img></center>   
+                <p>We offer natural shampoo, dog baths, haircuts, ear cleaning and many more goods, and services. We even clean your animals for a small price of <strong>$10.99</strong>.</p>
+            </div>
+            <div class="col-md-6">
+                <center><img src="./dogwalks.jpeg"></img></center>
+                <p>We provide walks for your pet whenever you are busy.  Price <strong>9$</strong> per hour.</p>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-6">
+                   <center><img src="./delivery.jpeg"></img></center> 
+                    <p>We will provide you animals with products of shampoo, food, leashes, toys, and etc. The Delivery fee for bringing these products to your animals will cost  <b>$8.50</b>.</p>
+                </div>
+                <div class="col-md-6">
+                    <center><img src="./careforanimals.jpeg"></img></center>
+                    <p>Why watch your pets when we can watch them for you. Cost is <b>8$</b> per hour.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="Meet" class="content">
+        <center>
+            <h2>Meet Our Team</h2>
+        </center>
+        <p>Something here.. </p>
+    </section>
+
+    <section id="Trusted" class="content">
+        <center>
+            <h2>Trusted By</h2>
+        </center>
+        <p>Something here.. </p>
+    </section>
+
+    <section id="Location" class="content">
+        <center>
+            <h2>Location</h2>
+        </center>
+        <p>Something here.. </p>
+    </section>
+
+    <section id="Contact" class="content">
+        <center>
+            <h2>Contact</h2>
+        </center>
+        <p>Something here.. </p>
+    </section>
+
+    <footer>
+        <center>
+            <p>Pets HQ</p>
+        </center>
+        <center><address>
+			709 Honey Creek Dr. New York, NY 10028
+
+		</address></center>
+        <center>
+            <p>Pet@gmail.com</p>
+        </center>
+        <center>
+            <p>(202)-555-0186</p>
+        </center>
+    </footer>
+    
+</body>
+
+</html>
